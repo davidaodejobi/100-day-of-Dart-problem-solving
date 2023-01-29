@@ -1,4 +1,4 @@
-String removePuntuation(String sentense) {
+String removePunctuation(String sentense) {
   String neuSentence = '';
   for (int i = 0; i < sentense.length; i++) {
     bool isValid = RegExp(r'[A-Za-z]').hasMatch(sentense[i]);
