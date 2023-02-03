@@ -1,5 +1,6 @@
-import 'package:hundred_days_of_dart_ps/day_8.dart';
+import 'package:hundred_days_of_dart_ps/day_9.dart';
 
 void main() {
-  print(findSecondLargest([1, 2, 3, 4, 5]));
+  print(subStringFrequency("I love Dart. I love Dart so much", "love"));
+  print(subStringFrequency2("I love Dart. I love Dart so much", "love"));
 }
