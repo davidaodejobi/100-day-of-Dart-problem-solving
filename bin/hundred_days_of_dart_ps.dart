@@ -1,6 +1,7 @@
-import 'package:hundred_days_of_dart_ps/day_9.dart';
+import 'package:hundred_days_of_dart_ps/day_10.dart';
 
 void main() {
-  print(subStringFrequency("I love Dart. I love Dart so much", "love"));
-  print(subStringFrequency2("I love Dart. I love Dart so much", "love"));
+  List<int> numbers = [1, 2, 3, 4, 5, 5, 6, 6, 7, 7, 8, 9];
+  var result = getMeanMedianMode(numbers);
+  print(result);
 }
