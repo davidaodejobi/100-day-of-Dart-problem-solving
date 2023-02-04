@@ -1,7 +1,7 @@
 Map<String, dynamic> getMeanMedianMode(List<int> numbers) {
   Map<String, dynamic> results = {};
 
-  // mean
+  // Calculate the mean by summing up all the numbers and dividing by the length of the list
   int sum = 0;
   for (int num in numbers) {
     sum += num;
@@ -9,7 +9,7 @@ Map<String, dynamic> getMeanMedianMode(List<int> numbers) {
   double mean = sum / numbers.length;
   results['mean'] = mean;
 
-  // median
+  // Calculate the median by first sorting the list, then finding the middle value(s)
   numbers.sort();
   int midIndex = numbers.length ~/ 2;
   double median = numbers.length.isEven
@@ -17,7 +17,7 @@ Map<String, dynamic> getMeanMedianMode(List<int> numbers) {
       : numbers[midIndex].toDouble();
   results['median'] = median;
 
-  // mode
+  // Calculate the mode by keeping a frequency map, then finding the number(s) with the highest frequency
   Map<int, int> frequencyMap = {};
   int maxFrequency = 0;
   int mode = numbers[0];
